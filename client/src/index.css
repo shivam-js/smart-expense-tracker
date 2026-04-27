@@ -1507,3 +1507,403 @@ body.dark-mode .user-meta small {
     transform: translateY(0) scale(1);
   }
 }
+
+/* ================= MOBILE NAVBAR FIX ================= */
+
+@media (max-width: 768px) {
+  .navbar,
+  .top-navbar,
+  .dashboard-navbar,
+  .app-navbar {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px;
+    overflow: hidden;
+  }
+
+  .navbar-left,
+  .nav-left,
+  .brand-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .navbar-right,
+  .nav-right,
+  .user-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .user-card,
+  .user-profile,
+  .profile-box {
+    max-width: calc(100% - 110px);
+    overflow: hidden;
+  }
+
+  .user-card span,
+  .user-profile span,
+  .profile-box span,
+  .user-email,
+  .user-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .logout-btn,
+  .btn-logout {
+    flex-shrink: 0;
+  }
+}
+
+/* ===== FINAL MOBILE OVERFLOW FIX ===== */
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .app,
+  .dashboard,
+  .dashboard-container,
+  .main-content,
+  .content,
+  .page-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .navbar,
+  .top-navbar,
+  .dashboard-navbar,
+  .app-navbar {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+    padding: 14px !important;
+    gap: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .navbar-left,
+  .nav-left,
+  .brand-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .navbar-right,
+  .nav-right,
+  .user-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .user-card,
+  .user-profile,
+  .profile-box {
+    min-width: 0 !important;
+    max-width: calc(100% - 90px) !important;
+    overflow: hidden !important;
+  }
+
+  .user-name,
+  .user-email {
+    max-width: 100% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .logout-btn,
+  .btn-logout {
+    flex-shrink: 0 !important;
+  }
+}
+
+/* ================= FULL MOBILE NAVBAR FIX ================= */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: relative;
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    margin: 12px auto !important;
+    padding: 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    overflow: hidden !important;
+    z-index: 1000;
+  }
+
+  .navbar-left {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    min-width: 0 !important;
+  }
+
+  .navbar-left h1,
+  .navbar-title,
+  .brand-title {
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+    word-break: break-word !important;
+  }
+
+  .navbar-right {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+    min-width: 0 !important;
+  }
+
+  .user-profile,
+  .user-card,
+  .profile-box {
+    flex: 1 !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 100px) !important;
+    overflow: hidden !important;
+  }
+
+  .user-name,
+  .user-email,
+  .user-profile span,
+  .user-profile p,
+  .user-card span,
+  .user-card p {
+    display: block !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .logout-btn,
+  .btn-logout {
+    flex-shrink: 0 !important;
+    width: auto !important;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 85% !important;
+    max-width: 320px !important;
+    height: 100vh !important;
+    z-index: 2000 !important;
+    overflow-y: auto !important;
+  }
+
+  .sidebar.open,
+  .sidebar.active {
+    transform: translateX(0) !important;
+  }
+
+  .sidebar:not(.open):not(.active) {
+    transform: translateX(-110%) !important;
+  }
+}
+
+/* ========== FINAL RESPONSIVE NAVBAR + SIDEBAR FIX ========== */
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .page-shell {
+    padding: 14px 10px 32px !important;
+  }
+
+  .app-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .premium-navbar {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 18px !important;
+    padding: 14px !important;
+    border-radius: 22px !important;
+
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    grid-template-areas:
+      "left left"
+      "right right" !important;
+    row-gap: 14px !important;
+
+    overflow: hidden !important;
+  }
+
+  .navbar-left {
+    grid-area: left !important;
+    width: 100% !important;
+    min-width: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .navbar-menu-btn {
+    width: 54px !important;
+    height: 54px !important;
+    min-width: 54px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .navbar-brand {
+    min-width: 0 !important;
+    flex: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .navbar-brand-badge {
+    width: 54px !important;
+    height: 54px !important;
+    min-width: 54px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .navbar-brand-text {
+    min-width: 0 !important;
+    flex: 1 !important;
+  }
+
+  .navbar-brand-text h2 {
+    font-size: 20px !important;
+    line-height: 1.15 !important;
+    margin: 0 !important;
+    word-break: break-word !important;
+  }
+
+  .navbar-brand-text p {
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+    margin: 4px 0 0 !important;
+  }
+
+  .navbar-right {
+    grid-area: right !important;
+    width: 100% !important;
+    min-width: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+  }
+
+  .navbar-user-chip {
+    flex: 1 !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 95px) !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+
+    overflow: hidden !important;
+  }
+
+  .user-avatar {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .user-meta {
+    display: block !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .user-meta strong,
+  .user-meta small {
+    display: block !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .navbar-logout-btn {
+    width: auto !important;
+    min-width: 82px !important;
+    flex-shrink: 0 !important;
+    padding: 12px 14px !important;
+    font-size: 14px !important;
+  }
+
+  .sidebar-panel {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 86vw !important;
+    max-width: 340px !important;
+    height: 100vh !important;
+
+    border-radius: 0 24px 24px 0 !important;
+    z-index: 9999 !important;
+
+    padding: 24px 20px !important;
+    overflow-y: auto !important;
+  }
+
+  .sidebar-panel.left.open {
+    transform: translateX(0) scale(1) !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .sidebar-backdrop {
+    z-index: 9998 !important;
+  }
+}
