@@ -62,9 +62,13 @@ This application provides a **centralized platform** to:
 
 ## 🖼️ Screenshots
 
-### 📊 Dashboard
+### 📊 Dashboard1
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard1](./screenshots/dashboard1.png)
+
+### 📊 Dashboard2
+
+![Dashboard2](./screenshots/dashboard2.png)
 
 ### 🔐 Login Page
 
@@ -73,6 +77,10 @@ This application provides a **centralized platform** to:
 ### 📱 Mobile View
 
 ![Mobile](./screenshots/mobile.png)
+
+### Sidebar
+
+![Sidebar](./screenshots/sidebar.png)
 
 ---
 
