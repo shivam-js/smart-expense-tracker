@@ -64,23 +64,23 @@ This application provides a **centralized platform** to:
 
 ### 📊 Dashboard1
 
-![Dashboard1](./screenshots/dashboard1.png)
+![Dashboard1](./Screenshots/Dashboard1.png)
 
 ### 📊 Dashboard2
 
-![Dashboard2](./screenshots/dashboard2.png)
+![Dashboard2](./Screenshots/Dashboard2.png)
 
 ### 🔐 Login Page
 
-![Login](./screenshots/login.png)
+![Login](./Screenshots/Login.png)
 
 ### 📱 Mobile View
 
-![Mobile](./screenshots/mobile.png)
+![Mobile](./Screenshots/Mobile.png)
 
 ### Sidebar
 
-![Sidebar](./screenshots/sidebar.png)
+![Sidebar](./Screenshots/Sidebar.png)
 
 ---
 
