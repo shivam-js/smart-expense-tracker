@@ -8,7 +8,7 @@
 
 Frontend 👉 https://smart-expense-trackee.netlify.app/
 
-Backend 👉 (https://smart-expense-tracker-backend-74oj.onrender.com)
+Backend 👉 https://smart-expense-tracker-backend-74oj.onrender.com
 
 ---
 
