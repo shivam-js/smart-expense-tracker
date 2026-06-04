@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://smart-expense-tracker-production-ca7c.up.railway.app/api",
+  baseURL: "https://smart-expense-tracker-backend-74oj.onrender.com/api",
 });
 
 // Attach token automatically
